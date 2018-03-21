@@ -1,0 +1,350 @@
+doctype html
+
+html(lang="en")
+  
+  head
+    title IMC
+    
+    // icon
+    link(rel="icon" href="/images/html-5.ico")
+    
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+      
+    // CSS Link
+    link(rel="stylesheet" type="text/css" href="css/main.css")
+    
+  body
+    // Header
+    header.header
+      // Top section of the Header
+      section.header-top
+        div.header-top-container.centering-container
+          div.header-top__logo-container
+            a.header-top__logo(href="#") 
+              h1 HTML5
+          // Top-links: Register, About, Contact
+          div.top-links-container
+            ul.top-links__list
+              li.top-link__item
+                a(href="#") JOIN US
+                  span REGISTER
+              li.top-link__item
+                a(href="#") LEARN MORE
+                  span ABOUT US 
+              li.top-link__item
+                a(href="#") GET IN TOUCH
+                  span CONTACT US
+          // Burger menu for mobile devices
+          div.mobile-menu-trigger-container
+            a.mobile-menu-trigger(data-js-mobile-menu-trigger)
+      // Bottom section of the Header
+      section.header-bottom
+        div.header-bottom-content-container
+          // Navigation for mobile devices
+          nav.mobile-menu-container      
+            ul.mobile-menu-list
+              li.mobile-menu-item
+                a.nav-active(href="#")
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" x="0px" y="0px" fill="#ffffff" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><polygon points="82,91.1 82,56.9 50.1,29 18.2,56.9 18.2,91.1 42.5,91.1 42.5,65.4 57.5,65.4 57.5,91.1  "/><polygon points="75.7,14.3 65.7,14.3 65.7,23.2 50.1,9.3 5.6,49 12.3,56.5 50.1,22.7 87.9,56.5 94.6,49 75.7,32.1  "/></g></svg>
+              li.mobile-menu-item
+                a(href="#") HTML
+              li.mobile-menu-item
+                a(href="#") CSS
+              li.mobile-menu-item
+                a(href="#") JAVASCRIPT
+              li.mobile-menu-item
+                a(href="#") SQL
+              li.mobile-menu-item
+                a(href="#") PHP
+              li.mobile-menu-item
+                a(href="#") BOOTSTRAP
+              li.mobile-menu-item
+                a(href="#") JQUERY
+              li.mobile-menu-item
+                a(href="#") ANGULAR
+              li.mobile-menu-item
+                a(href="#") XML
+              li.mobile-menu-item.mobile-top-link
+                a(href="#") REGISTER
+              li.mobile-menu-item.mobile-top-link
+                a(href="#") ABOUT US
+              li.mobile-menu-item.mobile-top-link
+                a(href="#") CONTACT US
+          // Navigation for larger displays
+          nav.desktop-menu-container.centering-container
+            ul.desktop-menu-list
+              li.desktop-menu-item
+                a.nav-active(href="#")
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" x="0px" y="0px" fill="#ffffff" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><polygon points="82,91.1 82,56.9 50.1,29 18.2,56.9 18.2,91.1 42.5,91.1 42.5,65.4 57.5,65.4 57.5,91.1  "/><polygon points="75.7,14.3 65.7,14.3 65.7,23.2 50.1,9.3 5.6,49 12.3,56.5 50.1,22.7 87.9,56.5 94.6,49 75.7,32.1  "/></g></svg>
+              li.desktop-menu-item
+                a(href="#") HTML
+              li.desktop-menu-item
+                a(href="#") CSS
+              li.desktop-menu-item
+                a(href="#") JAVASCRIPT
+              li.desktop-menu-item
+                a(href="#") SQL
+              li.desktop-menu-item
+                a(href="#") PHP
+              li.desktop-menu-item
+                a(href="#") BOOTSTRAP
+              li.desktop-menu-item
+                a(href="#") JQUERY
+              li.desktop-menu-item
+                a(href="#") ANGULAR
+              li.desktop-menu-item
+                a(href="#") XML
+    // Main
+    main.main
+      // Hero section
+      section.hero
+        // Carousel 
+        div.hero-carousel
+          // Slide no. 1
+          div.hero-slide.hero-slide--1 
+            div.hero-slide__content.centering-container
+              div.hero-slide__content-title-container
+                h2.hero-slide__content-title 
+                  span.strong CREATIVE 
+                  | DESIGN
+              div.hero-slide__content-text-container
+                p.hero-slide__content-text Pellentesque egestas ornare sagittis. Sed augue lorem, dignissim eget bibendum vitae, scelerisque eget justo. Duis tincidunt erat quam.
+              div.hero-slide__content-cta-container
+                a.hero-slide__content-cta(href="#") LEARN MORE 
+          // Slide no. 2
+          div.hero-slide.hero-slide--2 
+            div.hero-slide__content.centering-container
+              div.hero-slide__content-title-container
+                h2.hero-slide__content-title Math and Web Design
+              div.hero-slide__content-text-container
+                p.hero-slide__content-text If you think Math is hard, try Web Design.
+              div.hero-slide__content-cta-container
+                a.hero-slide__content-cta(href="#") LEARN MORE 
+          // Slide no. 3
+          div.hero-slide.hero-slide--3 
+            div.hero-slide__content.centering-container
+              div.hero-slide__content-title-container
+                h2.hero-slide__content-title CODING IS 
+                  span.strong FUN
+              div.hero-slide__content-text-container
+                p.hero-slide__content-text It may be the closest thing we have to a superpower
+              div.hero-slide__content-cta-container
+                a.hero-slide__content-cta(href="#") LEARN MORE 
+      // Projects section
+      section.projects.centering-container
+        // Projects title
+        header.projects__header
+          div.projects__title-container
+            h3.projects__title OUR PROJECTS
+          // Project filter - Sort By - Select
+          div.projects__filter-container
+            label.projects__filter__label(for="projects-filter") SORT BY
+            select#projects-filter.projects__filter__select(name="projects-filter")
+              option(value="Newest entries") Newest entries
+              option(value="Oldest entries") Oldest entries
+        // Projects content
+        div.projects-container
+          div.project.overlay--purple.project--image1
+            div.project__title-container
+              p.project__title PROJECT NAME
+          div.project.overlay.project--image2
+            div.project__title-container
+              p.project__title PROJECT NAME
+          div.project.overlay--red.project--image1
+            div.project__title-container
+              p.project__title PROJECT NAME
+          div.project.overlay--red.project--image1
+            div.project__title-container
+              p.project__title PROJECT NAME
+          div.project.overlay--purple.project--image2
+            div.project__title-container
+              p.project__title PROJECT NAME
+          div.project.overlay.project--image1
+            div.project__title-container
+              p.project__title PROJECT NAME
+      // FAQ Section
+      section.faq-section
+        div.centering-container
+          // FAQ Section Title
+          header.faq-section__header
+            h3.faq-header__title GOT QUESTIONS?
+          // FAQ Accordions
+          div.accordions-container
+            // Accordion no. 1
+            div.accordion.accordion--active
+              div.accordion__header(data-js-accordion-trigger)
+                p.accordion-header__title Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              div.accordion__content
+                div.accordion-content__image-container
+                  img.accordion-content__image(src="images/accordion-thumb1.png" alt="HTML5 CSS jQuery")
+                div.accordion-content__text-container
+                  p.accordion-content__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor justo eros, id consequat justo lobortis non. Aenean vel turpis lacus. Proin a hendrerit mauris, sed hendrerit risus. Donec ullamcorper tortor et accumsan interdum. Maecenas vitae lacus laoreet, lacinia eros ac, viverra enim. Sed porta aliquam dolor, quis faucibus turpis ultricies sit amet. Sed porttitor quam at nibh ullamcorper, nec venenatis mi luctus. Integer ultrices nisl id lacus bibendum, in tempus dui mollis. Morbi tempor mauris a sem feugiat varius. Curabitur iaculis, odio vel sollicitudin efficitur, sapien purus fermentum ex, ac congue ligula magna vel tortor. Integer a est non quam luctus convallis. Curabitur vitae metus metus. 
+                  div.accordion-content__cta-container
+                    p.accordion-content__cta-text Aliquam vitae orci at neque tempus varius eleifend a lorem. Ut vestibulum viverra tristique. Etiam imperdiet ultricies diam at dignissim
+                    a.accordion-content__cta-button(href="#") DO SOMETHING
+            // Accordion no. 2
+            div.accordion
+              div.accordion__header(data-js-accordion-trigger)
+                p.accordion-header__title Vivamus iaculis mollis nibh
+              div.accordion__content
+                //- div.accordion-content__image-container
+                //-   img.accordion-content__image(src="images/accordion-thumb1.png" alt="HTML5 CSS jQuery")
+                div.accordion-content__text-container
+                  p.accordion-content__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor justo eros, id consequat justo lobortis non. Aenean vel turpis lacus. Proin a hendrerit mauris, sed hendrerit risus. Donec ullamcorper tortor et accumsan interdum. Maecenas vitae lacus laoreet, lacinia eros ac, viverra enim. Sed porta aliquam dolor, quis faucibus turpis ultricies sit amet. Sed porttitor quam at nibh ullamcorper, nec venenatis mi luctus. Integer ultrices nisl id lacus bibendum, in tempus dui mollis. Morbi tempor mauris a sem feugiat varius. Curabitur iaculis, odio vel sollicitudin efficitur, sapien purus fermentum ex, ac congue ligula magna vel tortor. Integer a est non quam luctus convallis. Curabitur vitae metus metus. 
+                  div.accordion-content__cta-container
+                    p.accordion-content__cta-text Aliquam vitae orci at neque tempus varius eleifend a lorem. Ut vestibulum viverra tristique. Etiam imperdiet ultricies diam at dignissim
+                    a.accordion-content__cta-button(href="#") DO SOMETHING
+            // Accordion no. 3
+            div.accordion
+              div.accordion__header(data-js-accordion-trigger)
+                p.accordion-header__title Aliquam fermentum justo at lorem ultrices
+              div.accordion__content
+                //- div.accordion-content__image-container
+                //-   img.accordion-content__image(src="images/accordion-thumb1.png" alt="HTML5 CSS jQuery")
+                div.accordion-content__text-container
+                  p.accordion-content__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor justo eros, id consequat justo lobortis non. Aenean vel turpis lacus. Proin a hendrerit mauris, sed hendrerit risus. Donec ullamcorper tortor et accumsan interdum. Maecenas vitae lacus laoreet, lacinia eros ac, viverra enim. Sed porta aliquam dolor, quis faucibus turpis ultricies sit amet. Sed porttitor quam at nibh ullamcorper, nec venenatis mi luctus. Integer ultrices nisl id lacus bibendum, in tempus dui mollis. Morbi tempor mauris a sem feugiat varius. Curabitur iaculis, odio vel sollicitudin efficitur, sapien purus fermentum ex, ac congue ligula magna vel tortor. Integer a est non quam luctus convallis. Curabitur vitae metus metus. 
+                  //- div.accordion-content__cta-container
+                  //-   p.accordion-content__cta-text Aliquam vitae orci at neque tempus varius eleifend a lorem. Ut vestibulum viverra tristique. Etiam imperdiet ultricies diam at dignissim
+                  //-   a.accordion-content__cta-button(href="#") DO SOMETHING
+    // Footer
+    footer.footer
+      // Footer Links Section
+      section.footer-links
+        // Accordion Footer links for mobile devices
+        ul.footer-mobile-accordions
+          // Accordion no. 1
+          li.footer-accordion
+            div.footer-accordion__title-container(data-js-footer-accordion-trigger)
+              h4.footer-accordion__title Good Job
+            div.footer-accordion__list-container
+              ul.footer-link__list
+                li.footer-links__item
+                  a.footer-link(href="#") Five lists
+                li.footer-links__item
+                  a.footer-link(href="#") Full of links
+                li.footer-links__item
+                  a.footer-link(href="#") More than one color
+          // Accordion no. 2
+          li.footer-accordion
+            div.footer-accordion__title-container(data-js-footer-accordion-trigger)
+              h4.footer-accordion__title Looks Great
+            div.footer-accordion__list-container
+              ul.footer-link__list
+                li.footer-links__item.footer-links__item--blue
+                  a.footer-link(href="#") These bullets...
+                li.footer-links__item.footer-links__item--blue
+                  a.footer-link(href="#") Makes it a little bit difficult
+                li.footer-links__item.footer-links__item--blue
+                  a.footer-link(href="#") But we have fate! 
+          // Accordion no. 3
+          li.footer-accordion
+            div.footer-accordion__title-container(data-js-footer-accordion-trigger)
+              h4.footer-accordion__title Keep It Like This
+            div.footer-accordion__list-container
+              ul.footer-link__list
+                li.footer-links__item
+                  a.footer-link(href="#") Unordered list?
+                li.footer-links__item
+                  a.footer-link(href="#") Is the way to go?
+                li.footer-links__item
+                  a.footer-link(href="#") It's your choice!
+          // Accordion no. 4
+          li.footer-accordion
+            div.footer-accordion__title-container(data-js-footer-accordion-trigger)
+              h4.footer-accordion__title Nice Progress
+            div.footer-accordion__list-container
+              ul.footer-link__list
+                li.footer-links__item.footer-links__item--blue
+                  a.footer-link(href="#") Seems like you got it
+                li.footer-links__item.footer-links__item--blue
+                  a.footer-link(href="#") Easy, huh?
+                li.footer-links__item.footer-links__item--blue
+                  a.footer-link(href="#") Eh, easy for you...
+          // Accordion no. 5
+          li.footer-accordion
+            div.footer-accordion__title-container(data-js-footer-accordion-trigger)
+              h4.footer-accordion__title You're Almost Done
+            div.footer-accordion__list-container
+              ul.footer-link__list
+                li.footer-links__item
+                  a.footer-link(href="#") Just 2 items more
+                li.footer-links__item
+                  a.footer-link(href="#") And now it's the time
+                li.footer-links__item
+                  a.footer-link(href="#") To review your work :)
+        // Footer links for larger displays
+        div.footer-desktop-lists.centering-container
+          // List no. 1
+          div.footer-links-container
+            div.footer-links__title-container
+              h4.footer-links__title Good Job
+            ul.footer-links__list
+              li.footer-links__item
+                a.footer-link(href="#") Five Lists  
+              li.footer-links__item
+                a.footer-link(href="#") Full of links 
+              li.footer-links__item
+                a.footer-link(href="#") More than one color  
+          // List no. 2
+          div.footer-links-container
+            div.footer-links__title-container
+              h4.footer-links__title Looks Great
+            ul.footer-links__list
+              li.footer-links__item.footer-links__item--blue
+                a.footer-link(href="#") These bullets...
+              li.footer-links__item.footer-links__item--blue
+                a.footer-link(href="#") Makes it a little bit difficult 
+              li.footer-links__item.footer-links__item--blue
+                a.footer-link(href="#") But we have fate!  
+          // List no. 3
+          div.footer-links-container
+            div.footer-links__title-container
+              h4.footer-links__title Keep It Like This
+            ul.footer-links__list
+              li.footer-links__item
+                a.footer-link(href="#") Unordered list?
+              li.footer-links__item
+                a.footer-link(href="#") Is the way to go?
+              li.footer-links__item
+                a.footer-link(href="#") It's your choice!
+          // List no. 4
+          div.footer-links-container
+            div.footer-links__title-container
+              h4.footer-links__title Nice Progress
+            ul.footer-links__list
+              li.footer-links__item.footer-links__item--blue
+                a.footer-link(href="#") Seems like you got it
+              li.footer-links__item.footer-links__item--blue
+                a.footer-link(href="#") Easy, huh?
+              li.footer-links__item.footer-links__item--blue
+                a.footer-link(href="#") Eh, easy for you...  
+          // List no. 5
+          div.footer-links-container
+            div.footer-links__title-container
+              h4.footer-links__title You're Almost Done
+            ul.footer-links__list
+              li.footer-links__item
+                a.footer-link(href="#") Just 2 items more 
+              li.footer-links__item
+                a.footer-link(href="#") And now it's the time
+              li.footer-links__item
+                a.footer-link(href="#") To review your work :)  
+        // Footer last section - Opacity
+        div.footer-last-container
+          div.footer-opacity
+            p.footer-opacity__text Opacity is easy these days, isn't it?
+          div.footer-logo-container
+            div.footer-logo
+          div.footer-text-container
+            p.footer-text Thanks for your effort!
+        
+
+    // Javascript files
+    // jQuery CDN
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    
+    // JavaScript links
+    script(src="../javascript/main.js")
+    
+    // Slick 
+    script(src="../javascript/slick.js")
